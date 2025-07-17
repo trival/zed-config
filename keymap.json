@@ -1,0 +1,45 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+	{
+		"context": "Workspace",
+		"bindings": {
+			"shift shift": "file_finder::Toggle"
+		}
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			// "j k": ["workspace::SendKeystrokes", "escape"]
+		}
+	},
+	{
+		"context": "vim_mode == insert",
+		"bindings": {
+			"j j": "vim::NormalBefore", // In insert mode, make jj escape to normal mode.
+			"k k": "vim::NormalBefore", // In insert mode, make kk escape to normal mode.
+			// "ü": ["workspace::SendKeystrokes", "{"], // doesn't work (0.196.2)
+			// "ö": ["workspace::SendKeystrokes", "("], // doesn't work (0.196.2)
+			// "ä": ["workspace::SendKeystrokes", "["], // doesn't work (0.196.2)
+			// "Ü": ["workspace::SendKeystrokes", "}"], // doesn't work (0.196.2)
+			// "Ö": ["workspace::SendKeystrokes", ")"], // doesn't work (0.196.2)
+			// "Ä": ["workspace::SendKeystrokes", "]"], // doesn't work (0.196.2)
+			"ctrl-;": ["workspace::SendKeystrokes", "("], // ctrl-; -> ö workarround
+			"ctrl-'": ["workspace::SendKeystrokes", "["], // ctrl-' -> ä workarround
+			"ctrl-[": ["workspace::SendKeystrokes", "{"] // ctrl-[ -> ü workarround
+		}
+	},
+	{
+		"context": "vim_mode == normal",
+		"bindings": {
+			"g f": "file_finder::Toggle",
+			"ctrl-backspace": "project_panel::ToggleFocus",
+			"g r": ["workspace::SendKeystrokes", "g R"]
+		}
+	}
+]

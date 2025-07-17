@@ -1,0 +1,42 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"edit_predictions": {
+  "mode": "eager",
+  "copilot": {
+   "proxy": null,
+   "proxy_no_verify": null,
+   "enterprise_uri": null
+  },
+  "enabled_in_text_threads": false
+ },
+ "icon_theme": "Catppuccin Mocha",
+	"agent": {
+		"default_profile": "write",
+		"model_parameters": [],
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "claude-sonnet-4"
+		}
+	},
+	"language_models": {},
+	"vim_mode": true,
+	"ui_font_size": 16,
+	"buffer_font_size": 16,
+	"buffer_font_family": "Fira Code",
+	"hard_tabs": true,
+	"theme": {
+		"mode": "system",
+		"light": "Trival Colors Dark",
+		"dark": "Trival Colors Dark"
+	},
+	"git": {
+		"inline_blame": { "enabled": false }
+	}
+}
