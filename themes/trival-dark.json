@@ -190,13 +190,19 @@
 						"color": "#e0cb93",
 						"background_color": null,
 						"font_style": null,
-						"font_weight": 700
+						"font_weight": 600
 					},
 					"function.definition": {
 						"color": "#e0cb93",
 						"background_color": null,
 						"font_style": null,
-						"font_weight": 700
+						"font_weight": 600
+					},
+					"function.method.definition": {
+						"color": "#e0cb93",
+						"background_color": null,
+						"font_style": null,
+						"font_weight": null
 					},
 					"keyword": {
 						"color": "#53cfcf",
@@ -235,7 +241,7 @@
 						"font_weight": null
 					},
 					"property": {
-						// "color": "#cccfcb",
+						// "color": null,
 						"color": "#dab3f3",
 						"background_color": null,
 						"font_style": null,
@@ -332,7 +338,7 @@
 						"font_weight": null
 					},
 					"variable": {
-						"color": "#cccfcb",
+						"color": null,
 						"background_color": null,
 						"font_style": null,
 						"font_weight": null
