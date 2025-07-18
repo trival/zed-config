@@ -39,7 +39,38 @@
 		"bindings": {
 			"g f": "file_finder::Toggle",
 			"ctrl-backspace": "project_panel::ToggleFocus",
-			"g r": ["workspace::SendKeystrokes", "g R"]
+			"g r": ["workspace::SendKeystrokes", "g R"],
+			"ctrl-j": "editor::AddSelectionBelow",
+			"ctrl": "editor::AddSelectionAbove",
+			"H": ["workspace::SendKeystrokes", "^"],
+			"L": ["workspace::SendKeystrokes", "$"]
+		}
+	},
+	{
+		"context": "vim_mode == visual",
+		"bindings": {
+			"shift-s": ["vim::PushAddSurrounds", {}] // ignore warning, this works!
+		}
+	},
+	// navigate in subwords
+	{
+		"context": "VimControl && !menu && vim_mode != operator",
+		"bindings": {
+			"w": "vim::NextSubwordStart",
+			"b": "vim::PreviousSubwordStart",
+			"e": "vim::NextSubwordEnd",
+			"g e": "vim::PreviousSubwordEnd"
+		}
+	},
+	{
+		"context": "Editor && !menu",
+		"bindings": {
+			"ctrl-c": "editor::Copy", // vim default: return to normal mode
+			// "ctrl-v": "editor::Paste", // vim default: visual block mode
+			"ctrl-y": "editor::Undo", // vim default: line up
+			"ctrl-f": "buffer_search::Deploy", // vim default: page down
+			"ctrl-o": "workspace::Open", // vim default: go back
+			"ctrl-s": "workspace::Save" // vim default: show signature
 		}
 	}
 ]
