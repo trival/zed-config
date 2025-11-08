@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+	"autosave": "on_focus_change",
 	"edit_predictions": {
 		"mode": "eager",
 		"copilot": {
@@ -16,7 +17,7 @@
 		},
 		"enabled_in_text_threads": false
 	},
-	"icon_theme": "Catppuccin Mocha",
+	"icon_theme": "Zed (Default)",
 	"agent": {
 		"default_profile": "write",
 		"model_parameters": [],
@@ -33,7 +34,7 @@
 	"hard_tabs": true,
 	"theme": {
 		"mode": "system",
-		"light": "Trival Colors Dark",
+		"light": "Trival Colors Light",
 		"dark": "Trival Colors Dark"
 	},
 	"git": {
