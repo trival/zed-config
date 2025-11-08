@@ -38,6 +38,10 @@
 	},
 	"buffer_line_height": { "custom": 1.8 },
 	"buffer_font_family": "Fira Code",
+	"buffer_font_features": {
+		"calt": true,
+		"liga": true
+	},
 	"hard_tabs": true,
 	"theme": {
 		"mode": "dark",
