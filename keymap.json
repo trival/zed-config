@@ -13,12 +13,6 @@
 		}
 	},
 	{
-		"context": "Editor",
-		"bindings": {
-			// "j k": ["workspace::SendKeystrokes", "escape"]
-		}
-	},
-	{
 		"context": "vim_mode == insert",
 		"bindings": {
 			"j j": "vim::NormalBefore", // In insert mode, make jj escape to normal mode.
@@ -50,16 +44,25 @@
 	{
 		"context": "vim_mode == visual",
 		"bindings": {
-			"shift-s": ["vim::PushAddSurrounds", {}] // ignore warning, this works!
+			"shift-s": "vim::PushAddSurrounds"
 		}
 	},
 	// navigate in subwords
 	{
 		"context": "VimControl && !menu && vim_mode != operator",
 		"bindings": {
-			"w": "vim::NextSubwordStart",
-			"b": "vim::PreviousSubwordStart",
-			"e": "vim::NextSubwordEnd",
+			"m w": "vim::NextSubwordStart",
+			"m b": "vim::PreviousSubwordStart",
+			"m e": "vim::NextSubwordEnd",
+			"g e": "vim::PreviousSubwordEnd"
+		}
+	},
+	{
+		"context": "VimControl && !menu && vim_mode == operator",
+		"bindings": {
+			"m w": "vim::NextSubwordStart",
+			"m b": "vim::PreviousSubwordStart",
+			"m e": "vim::NextSubwordEnd",
 			"g e": "vim::PreviousSubwordEnd"
 		}
 	},

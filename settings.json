@@ -39,9 +39,21 @@
 	"buffer_line_height": { "custom": 1.8 },
 	"buffer_font_family": "Fira Code",
 	"buffer_font_features": {
+		// "ss01": true,
+		// "ss02": false,
+		// "ss03": false,
+		// "ss04": false,
+		// "ss05": false,
+		// "ss06": false,
+		// "ss07": false,
+		// "ss08": false,
+		// "ss09": false,
+		// "ss10": false,
 		"calt": true,
-		"liga": true
+		"liga": true,
+		"zero": true
 	},
+	// => -> != <= >= -->
 	"hard_tabs": true,
 	"theme": {
 		"mode": "dark",
